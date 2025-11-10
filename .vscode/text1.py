@@ -36,7 +36,7 @@ class IrisNN(nn.Module):
         x = torch.relu(self.fc1(x))
         x = self.fc2(x)
         return x
-print ̣("Hello")
+
 model = IrisNN()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.01)
